@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 08:10:20 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/30 07:40:09 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/02/10 13:15:22 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ad_malloc_cat_prefix_and_free_string(const char *s1, char *s2);
 
 char	*ad_rm_chr(char const *str, char const *set);
 
-void	free_array(char **arr);
+void	free_splitted(char **arr);
 
 // Reimplemented function
 int		ft_isalpha(int c);

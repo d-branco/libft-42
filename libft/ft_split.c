@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 13:03:20 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/30 07:41:12 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/02/10 13:15:22 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@
 //	size_t, ft_substr(), NULL
 //	char	**ft_split(char const *s, char c)
 
-void			free_array(char **arr);
+void			free_splitted(char **arr);
 static size_t	count_segments(char const *s, char c);
 static size_t	get_segment_length(char const *s, char c);
 static char		**allocate_segments(char **arr,
@@ -108,7 +108,7 @@ static char	**allocate_segments(char **arr,
 			i++;
 		arr[seg] = malloc(get_segment_length(&s[i], c) + 1);
 		if (!arr[seg])
-			return (free_array(arr), NULL);
+			return (free_splitted(arr), NULL);
 		while (s[i] && s[i] != c)
 		{
 			arr[seg][j] = s[i];
@@ -121,7 +121,7 @@ static char	**allocate_segments(char **arr,
 	return (arr);
 }
 
-void	free_array(char **arr)
+void	free_splitted(char **arr)
 {
 	size_t	i;
 
@@ -141,7 +141,7 @@ void	free_array(char **arr)
 
 static char		*add_substring(char const *s, unsigned int start, char c);
 static size_t	count_words(char const *s, char c);
-static void		free_array(char **arr, size_t size);
+static void		free_splitted(char **arr, size_t size);
 char			**initialize_array(char const *s, char c,
 					unsigned int *index_ptr);
 
@@ -162,7 +162,7 @@ char	**ft_split(char const *s, char c)
 			ptr[index_ptr] = add_substring(s, index, c);
 			if (ptr[index_ptr] == NULL)
 			{
-				free_array(ptr, index_ptr);
+				free_splitted(ptr, index_ptr);
 				return (NULL);
 			}
 			index_ptr++;
@@ -190,7 +190,7 @@ char	**initialize_array(char const *s, char c, unsigned int *index_ptr)
 		ptr[*index_ptr] = add_substring(s, 0, c);
 		if (ptr[*index_ptr] == NULL)
 		{
-			free_array(ptr, *index_ptr);
+			free_splitted(ptr, *index_ptr);
 			return (NULL);
 		}
 		(*index_ptr)++;
@@ -228,7 +228,7 @@ static size_t	count_words(char const *s, char c)
 	return (count);
 }
 
-static void	free_array(char **arr, size_t size)
+static void	free_splitted(char **arr, size_t size)
 {
 	size_t	i;
 
