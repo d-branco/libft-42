@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 10:58:49 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/28 15:51:32 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/02/16 17:25:25 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,7 +121,7 @@ static char	*ft_allocate_string(char **str, size_t width, char padding)
 {
 	char	*astr;
 
-	astr = (char *)calloc(sizeof(char), (width + 1));
+	astr = (char *)ft_calloc(sizeof(char), (width + 1));
 	if (!astr)
 	{
 		free(*str);
