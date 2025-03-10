@@ -6,7 +6,7 @@
 #    By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 17:56:00 by abessa-m          #+#    #+#              #
-#    Updated: 2025/01/28 16:28:13 by abessa-m         ###   ########.fr        #
+#    Updated: 2025/03/10 15:35:45 by abessa-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,8 +41,8 @@ $(NAME): $(OBJS) $(LIBFT)
 	@cd libft \
 	&& ar x libft.a \
 	&& cd .. \
-	&& $(AR) $(NAME) libft/*.o $(OBJS) \
-	&& echo "$(PURPLE)Library built: $(NAME)$(COR)"
+	&& $(AR) $(NAME) libft/*.o $(OBJS) 
+#	&& echo "$(PURPLE)Library built: $(NAME)$(COR)"
 
 %.o:	%.c 
 	@$(CC) $(CFLAGS) -c $< -o $@ 
