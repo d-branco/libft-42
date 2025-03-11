@@ -6,7 +6,7 @@
 #    By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/08 17:56:00 by abessa-m          #+#    #+#              #
-#    Updated: 2025/03/10 15:35:45 by abessa-m         ###   ########.fr        #
+#    Updated: 2025/03/11 14:49:39 by abessa-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,8 +63,8 @@ re: fclean all
 
 ################################################################## Build libft #
 $(LIBFT):
-	@make --no-print-directory -C libft \
-	&& echo "$(PURPLE)Library built: $(LIBFT)$(COR)" 
+	@make --no-print-directory -C libft 
+#	&& echo "$(PURPLE)Library built: $(LIBFT)$(COR)" 
 ###################################################################### Colors  #
 # COlor Remove
 COR = \033[0m
