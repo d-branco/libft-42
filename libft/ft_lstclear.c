@@ -6,14 +6,14 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:56:27 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/28 15:50:02 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Function name
 //		ft_lstclear
 //	Prototype
-//		void ft_lstclear(t_list **lst, void (*del)(void *));
+//		void ft_lstclear(t_l_no **lst, void (*del)(void *));
 //	Turn in files
 //		-
 //	Parameters
@@ -31,9 +31,9 @@
 
 #include "../libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_l_no **lst, void (*del)(void *))
 {
-	t_list	*current;
+	t_l_no	*current;
 
 	if (!lst || !*lst || !del)
 		return ;

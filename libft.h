@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 08:10:20 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/02/10 13:15:22 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,17 +73,17 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}					t_list;
+}					t_l_no;
 
-t_list	*ft_lstnew(void *content);
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
-void	ft_lstclear(t_list **lst, void (*del)(void *));
-void	ft_lstadd_front(t_list **lst, t_list *new);
-void	ft_lstadd_back(t_list **lst, t_list *new);
-int		ft_lstsize(t_list *lst);
-t_list	*ft_lstlast(t_list *lst);
-void	ft_lstiter(t_list *lst, void (*f)(void *));
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_l_no	*ft_lstnew(void *content);
+void	ft_lstdelone(t_l_no *lst, void (*del)(void *));
+void	ft_lstclear(t_l_no **lst, void (*del)(void *));
+void	ft_lstadd_front(t_l_no **lst, t_l_no *new);
+void	ft_lstadd_back(t_l_no **lst, t_l_no *new);
+int		ft_lstsize(t_l_no *lst);
+t_l_no	*ft_lstlast(t_l_no *lst);
+void	ft_lstiter(t_l_no *lst, void (*f)(void *));
+t_l_no	*ft_lstmap(t_l_no *lst, void *(*f)(void *), void (*del)(void *));
 
 //ft_printf
 int		ft_printf(const char *initial_str, ...);

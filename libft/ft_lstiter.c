@@ -6,14 +6,14 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:24:15 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/28 15:50:02 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Function name
 //		ft_lstiter
 //	Prototype
-//		void ft_lstiter(t_list *lst, void (*f)(void *));
+//		void ft_lstiter(t_l_no *lst, void (*f)(void *));
 //	Turn in files
 //		-
 //	Parameters
@@ -28,9 +28,9 @@
 //	applies the function ’f’ on the content of each node.
 
 #include "../libft.h"
-//	t_list
+//	t_l_no
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_l_no *lst, void (*f)(void *))
 {
 	if (!f)
 		return ;

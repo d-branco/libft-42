@@ -6,14 +6,14 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:04:08 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/28 15:50:02 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Function name
 //		ft_lstadd_back
 //	Prototype
-//		void ft_lstadd_back(t_list **lst, t_list *new);
+//		void ft_lstadd_back(t_l_no **lst, t_l_no *new);
 //	Turn in files
 //		-
 //	Parameters
@@ -27,11 +27,11 @@
 //		Adds the node ’new’ at the end of the list.
 
 #include "../libft.h"
-//	NULL, t_list
+//	NULL, t_l_no
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_l_no **lst, t_l_no *new)
 {
-	t_list	*last;
+	t_l_no	*last;
 
 	if (!lst || !new)
 		return ;

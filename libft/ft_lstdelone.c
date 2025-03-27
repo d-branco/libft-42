@@ -6,14 +6,14 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 14:31:40 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/28 15:50:02 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Function name
 //		ft_lstdelone
 //	Prototyoe
-//		void ft_lstdelone(t_list *lst, void (*del)(void *));
+//		void ft_lstdelone(t_l_no *lst, void (*del)(void *));
 //	Turn in files
 //		-
 //	Parameters
@@ -31,7 +31,7 @@
 
 #include "../libft.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_l_no *lst, void (*del)(void *))
 {
 	if (!lst || !del)
 		return ;

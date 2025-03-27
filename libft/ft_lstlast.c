@@ -6,14 +6,14 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:20:10 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/28 15:50:02 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Function name
 //		ft_lstlast
 //	Prototype
-//		t_list *ft_lstlast(t_list *lst);
+//		t_l_no *ft_lstlast(t_l_no *lst);
 //	Turn in files
 //		-
 //	Parameters
@@ -26,9 +26,9 @@
 //		Returns the last node of the list.
 
 #include "../libft.h"
-//	t_list
+//	t_l_no
 
-t_list	*ft_lstlast(t_list *lst)
+t_l_no	*ft_lstlast(t_l_no *lst)
 {
 	if (!lst)
 		return (NULL);

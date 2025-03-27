@@ -6,15 +6,15 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:30:02 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/28 15:50:03 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Function name
 //		ft_lstmap
 //	Prototype
-//		t_list *ft_lstmap
-//			(t_list *lst, void *(*f)(void *), void (*del)(void *));
+//		t_l_no *ft_lstmap
+//			(t_l_no *lst, void *(*f)(void *), void (*del)(void *));
 //	Turn in files
 //		-
 //	Parameters
@@ -34,12 +34,12 @@
 //	node if needed.
 
 #include "../libft.h"
-//	t_list, ft_lstnew, ft_lsclear, ft_lstadd_back
+//	t_l_no, ft_lstnew, ft_lsclear, ft_lstadd_back
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_l_no	*ft_lstmap(t_l_no *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*new_list;
-	t_list	*new_node;
+	t_l_no	*new_list;
+	t_l_no	*new_node;
 	void	*content;
 
 	if (!f || !del || !lst)

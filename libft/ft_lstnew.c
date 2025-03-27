@@ -6,14 +6,14 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:51:18 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/01/28 15:50:03 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Function name
 //		ft_lstnew
 //	Prototype
-//		t_list *ft_lstnew(void *content);
+//		t_l_no *ft_lstnew(void *content);
 //	Turn in files
 //		-
 //	Parameters
@@ -28,14 +28,14 @@
 //	variable ’next’ is initialized to NULL.
 
 #include "../libft.h"
-//  t_list, ft_calloc()
+//  t_l_no, ft_calloc()
 //  void	*ft_calloc(size_t nmemb, size_t size)
 
-t_list	*ft_lstnew(void *content)
+t_l_no	*ft_lstnew(void *content)
 {
-	t_list	*first;
+	t_l_no	*first;
 
-	first = (t_list *) malloc(sizeof(t_list));
+	first = (t_l_no *) malloc(sizeof(t_l_no));
 	if (first == NULL)
 		return (NULL);
 	(*first).content = content;
