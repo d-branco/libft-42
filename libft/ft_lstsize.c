@@ -6,14 +6,14 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:14:30 by abessa-m          #+#    #+#             */
-/*   Updated: 2025/03/27 14:50:42 by abessa-m         ###   ########.fr       */
+/*   Updated: 2025/04/17 08:59:25 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Function name
 //		ft_lstsize
 //	Prototype
-//		int ft_lstsize(t_l_no *lst);
+//		int ft_lstsize(t_list *lst);
 //	Turn in files
 //		-
 //	Parameters
@@ -26,9 +26,9 @@
 //		Counts the number of nodes in a list.
 
 #include "../libft.h"
-//	t_l_no
+//	t_list
 
-int	ft_lstsize(t_l_no *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	size;
 
